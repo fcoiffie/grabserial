@@ -427,7 +427,7 @@ def grab(arglist, outputfd=sys.stdout):
 
 			if show_systime and newline:
 				linetime = time.time()
-				linetimestr = datetime.datetime.now().strftime("%H:%M:%S.%f")
+				linetimestr = datetime.datetime.now().strftime("%y/%m/%d %H:%M:%S.%f")
 				elapsed = linetime-basetime
 				delta = elapsed-prev1
 				msg = "[%s %2.6f] " % (linetimestr, delta)
